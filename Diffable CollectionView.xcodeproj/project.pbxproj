@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7207B9A62BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7207B9A52BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.xib */; };
+		7207B9A72BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207B9A42BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.swift */; };
 		723BFA222BEB14D600D5810A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723BFA212BEB14D600D5810A /* AppDelegate.swift */; };
 		723BFA242BEB14D600D5810A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723BFA232BEB14D600D5810A /* SceneDelegate.swift */; };
 		723BFA262BEB14D600D5810A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723BFA252BEB14D600D5810A /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 		723BFA392BEB14DA00D5810A /* Diffable_CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723BFA382BEB14DA00D5810A /* Diffable_CollectionViewTests.swift */; };
 		723BFA432BEB14DA00D5810A /* Diffable_CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723BFA422BEB14DA00D5810A /* Diffable_CollectionViewUITests.swift */; };
 		723BFA452BEB14DA00D5810A /* Diffable_CollectionViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723BFA442BEB14DA00D5810A /* Diffable_CollectionViewUITestsLaunchTests.swift */; };
+		723BFA542BEB295D00D5810A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 723BFA532BEB295D00D5810A /* SnapKit */; };
+		723BFA562BEB295D00D5810A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 723BFA552BEB295D00D5810A /* SnapKit-Dynamic */; };
+		723BFA582BEB298200D5810A /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 723BFA572BEB298200D5810A /* Fakery */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7207B9A42BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceOfferCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		7207B9A52BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketplaceOfferCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		723BFA1E2BEB14D600D5810A /* Diffable CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diffable CollectionView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723BFA212BEB14D600D5810A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723BFA232BEB14D600D5810A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723BFA542BEB295D00D5810A /* SnapKit in Frameworks */,
+				723BFA562BEB295D00D5810A /* SnapKit-Dynamic in Frameworks */,
+				723BFA582BEB298200D5810A /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,8 @@
 				723BFA2A2BEB14DA00D5810A /* Assets.xcassets */,
 				723BFA2C2BEB14DA00D5810A /* LaunchScreen.storyboard */,
 				723BFA2F2BEB14DA00D5810A /* Info.plist */,
+				7207B9A42BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.swift */,
+				7207B9A52BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.xib */,
 			);
 			path = "Diffable CollectionView";
 			sourceTree = "<group>";
@@ -143,6 +155,11 @@
 			dependencies = (
 			);
 			name = "Diffable CollectionView";
+			packageProductDependencies = (
+				723BFA532BEB295D00D5810A /* SnapKit */,
+				723BFA552BEB295D00D5810A /* SnapKit-Dynamic */,
+				723BFA572BEB298200D5810A /* Fakery */,
+			);
 			productName = "Diffable CollectionView";
 			productReference = 723BFA1E2BEB14D600D5810A /* Diffable CollectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,10 @@
 				Base,
 			);
 			mainGroup = 723BFA152BEB14D600D5810A;
+			packageReferences = (
+				723BFA512BEB18CE00D5810A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				723BFA522BEB1D7A00D5810A /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = 723BFA1F2BEB14D600D5810A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				723BFA2B2BEB14DA00D5810A /* Assets.xcassets in Resources */,
+				7207B9A62BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.xib in Resources */,
 				723BFA2E2BEB14DA00D5810A /* Base in Resources */,
 				723BFA292BEB14D600D5810A /* Base in Resources */,
 			);
@@ -259,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				723BFA262BEB14D600D5810A /* ViewController.swift in Sources */,
+				7207B9A72BECA63C00F0FD1C /* MarketplaceOfferCellCollectionViewCell.swift in Sources */,
 				723BFA222BEB14D600D5810A /* AppDelegate.swift in Sources */,
 				723BFA242BEB14D600D5810A /* SceneDelegate.swift in Sources */,
 			);
@@ -607,6 +630,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		723BFA512BEB18CE00D5810A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		723BFA522BEB1D7A00D5810A /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		723BFA532BEB295D00D5810A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 723BFA512BEB18CE00D5810A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		723BFA552BEB295D00D5810A /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 723BFA512BEB18CE00D5810A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		723BFA572BEB298200D5810A /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 723BFA522BEB1D7A00D5810A /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 723BFA162BEB14D600D5810A /* Project object */;
 }
